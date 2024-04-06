@@ -22,8 +22,7 @@ app.use('/api',userRoute)
 app.use('/api',postRoute)
 
 app.get('/*', function(req, res) {
-    res.sendFile(path.join(__dirname
-    ,'/build/index.html')); })
+    res.sendFile(path.join(__dirname,'/build/index.html')); })
 
 app.listen(PORT,()=>{
     console.log(`server running on port ${PORT}`)  
